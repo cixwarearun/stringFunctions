@@ -1,9 +1,14 @@
 <?php
-
-//the substr_replace doesnot change the actual string.It just return the new string that would have been made after doing the replacement under decision
    $foo= 'My name is Arun Bastola';
-   echo substr_replace($foo,'helo',4,2) ;
+    
    echo '<br>';
-   echo substr_replace("Arun","Maka",$foo);
+   echo str_replace('Arun','Maka',$foo);
  ?>
-s
+    echo '<br>';
+ <?php
+   echo '<br>';
+$my_str = 'If the facts do not fit the theory, change the facts.';
+ 
+// replaces "facts" with "truth" and displays new string
+echo str_replace("facts", "truth", $my_str);
+?>
